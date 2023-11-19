@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+
+body {
+    background-image: url('img/planodefundo.png');
+    background-position: center ;
+    background-repeat: no-repeat;
+
+}
+
+
+header{
+    background:#52331c;
+    /*padding: 15px 0px; /*space around element inside borders*/
+    transition: 0.5s;
+}
+
+#box{
+    /* position: relative;/*initial point reference position into of box*/
+    /* width: 70%; */
+    /* margin: 0 auto; */ 
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-image: url('planodefundo.png');
+}
+
+#box h1 img{
+    width: 5em;
+}
+
+#box img{
+
+    border-radius: 50%;
+}
+
+nav ul{
+    /* position: absolute; initial point reference position with full page */
+    top: 230px; /*distance of top*/
+    right: 0px;
+    text-align: left;
+ 
+
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px; /*Extern space*/
+
+}
+
+nav a:hover{ /*change behavior when the mouse be above*/
+    
+    background-color:#e6decf;
+    border-radius: 55px;
+   }
+
+nav a{
+    /* text-transform: uppercase; */
+    font-weight: bold;
+    background-color: #e6decf;
+    color:#000;
+    border-radius: 22px;
+    text-decoration: none;/*default link design off*/
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    padding: 10px;
+
+}
+
+.banner img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.products{
+    width: 960px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.products li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px; 
+    box-sizing: border-box;/* The width (width) and height (height) properties include the fill size and property boundary */ /*not to increase the size of the element*/
+    border: 2px solid #000000;/*size / style / color */
+    border-radius: 10px; /* curvature */
+    margin-top: 20px;
+    background-color: #52331c;
+}
+
+.products li:hover{/*change behavior when the mouse it is over*/
+    border-color: #684124;
+}
+
+.products li:active{ /*change behavior when the mouse do click*/
+    border-color: #390ff5;
+}
+.products li > img{
+    width: 10em;
+    height: 10em;
+    border-radius:15px;
+    border: 5px solid #fcfbfb;
+}
+
+
+.products li:hover h3{
+    font-size: 30px;
+    
+}
+
+.product-description{
+    font-size: 300px;
+}
+.products h3{
+    font-family: 'Pontano Sans', sans-serif;
+    border-radius:25px;
+    background-color: #e6e4e2;
+    border: 2px solid #dabfa9;
+}
+.product-price{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.Botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.Botao button {
+    height: 50px;
+    width: 150px;
+    border-radius: 25px;
+    font-size: 20px;
+    background-color: #ddd5ce;
+    border: 2px solid #dabfa9;
+    margin-right: 10px; 
+}
+    
+.men img{
+    margin-top: 10px;
+    border-radius: 25px;
+    font-size: 15px;
+    background-color: #ddd5ce; 
+    border: 2px solid #ffffff;
+    max-width: 50px;
+    height: auto;
+}
+
+
+.product-title{
+    background-color: #e6e4e2;
+    border: 20px solid #dabfa9;
+    border-radius: 5px;
+    padding: 5px;
+    width: 200px; 
+    display: inline-block; 
+    
+}
+
+/* .Botao button:hover{
+    background-color: #ddd5ce; 
+    
+    transform: scale(1.s);
+
+} */
+footer{
+    text-align: center;
+
+}
+
+@media screen and (max-width: 800px)
+{/*Responsive*/
+    #box, .local, header, .main, body{
+        width: auto;
+    }
+
+    .products li > img {
+        width:100%; /* Define a largura para 100% da largura da div pai */
+        height: 150px; /* Mantém a proporção da imagem */
+    }
+
+    nav li {
+        display: block;
+        margin-bottom: 20px; 
+    }
+
+    nav ul{
+        position: static;
+    }
+    #box, .benefits, #four{
+        text-align: center;
+        margin: 0;
+        float: unset;
+    }
+
+    .benefits li{
+        text-align:start;
+    }
+
+    .main{
+        margin: 30px 2em;
+    }
+    #cut{
+        margin: 5px 10px 0px 0px;
+    }
+
+    .products{
+        width: auto;
+    }
+
+    .products li{
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        margin: 30px auto;
+        padding: 0 0; 
+        box-sizing: border-box;
+        border: 2px solid #000000;
+        border-radius: 10px; 
+    }
+
+    .products h3{
+        margin: 15px 0;
+    }
+
+    .products li > img{
+        width: 25em;
+        height: 25em;
+    }
+    
+    .product-description{
+        margin: 0 20px 0 20px;
+    }
+
+    .product-price{
+        margin-bottom: 10px;
+    }
+
+    form{
+        width: 80%;
+    }
+
+    .save{
+        width: 100%;
+        margin: 20px auto 0 auto;
+    }
+    
+}
